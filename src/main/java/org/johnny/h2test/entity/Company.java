@@ -1,16 +1,17 @@
 package org.johnny.h2test.entity;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.util.List;
 
+@Audited
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 @Table(name = "COMPANYS")
 @Access(AccessType.FIELD)
 public class Company {

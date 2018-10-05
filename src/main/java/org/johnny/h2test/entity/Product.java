@@ -1,16 +1,16 @@
 package org.johnny.h2test.entity;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 
+@Audited
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 @Table(name = "PRODUCTS")
 @Access(AccessType.FIELD)
 public class Product {
