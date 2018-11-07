@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "COMPANYS")
+@Table(name = "COMPANIES")
 @Access(AccessType.FIELD)
 public class Company {
     @Id

@@ -1,6 +1,6 @@
-INSERT INTO companys (id, name)
+INSERT INTO companies (id, name)
 VALUES (1, 'APPLE');
-INSERT INTO companys (id, name)
+INSERT INTO companies (id, name)
 VALUES (2, 'NVIDIA');
 
 INSERT INTO products (id, name, description, price_per_unit, company_id)
