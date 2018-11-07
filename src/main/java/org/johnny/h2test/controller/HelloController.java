@@ -16,11 +16,17 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello(HttpServletRequest request) {
         String name = request.getRemoteAddr();
+        return helloService.sayHello(name);
+    }
+
+    @GetMapping("/hello2")
+    public String hello2(HttpServletRequest request) {
+        String name = request.getRemoteAddr();
         name = returnWas();
         return helloService.sayHello(name);//highlight, if name == null
     }
 
-    private String returnWas(){
+    private String returnWas() {
         return null;
     }
 }
