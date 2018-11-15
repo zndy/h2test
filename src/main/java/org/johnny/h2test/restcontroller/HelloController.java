@@ -1,4 +1,4 @@
-package org.johnny.h2test.controller;
+package org.johnny.h2test.restcontroller;
 
 import org.johnny.h2test.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
