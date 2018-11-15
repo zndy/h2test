@@ -41,4 +41,9 @@ public class DueseRestService {
         log.info("Creating Duese: " + duese.toString());
         return dueseRepository.save(duese);
     }
+
+    @DeleteMapping(path = "/{dueseid}")
+    public @ResponseBody void delete(@PathVariable("dueseid") Long id) {
+        dueseRepository.deleteById(id);
+    }
 }
